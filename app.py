@@ -1079,7 +1079,7 @@ function replayAll() {{
 /* ── Evolutionary section ────────────────────── */
 var genTimers = [];
 
-/* ── Person SVG with pacifier (real chupón shape) ── */
+/* ── Person SVG with pacifier shape ── */
 function makePersonGen(group, x1, x2, isBaby) {{
   var bc = group === 'A' ? '{NAVY}' : '{ORANGE}';
   /* baby uses taller viewBox to fit pacifier below body */

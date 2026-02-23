@@ -1,66 +1,66 @@
-# College Admission — Simulación interactiva
+# College Admission — Interactive simulation
 
-App web interactiva para explorar **fairness y admisión universitaria** en un modelo simplificado con dos grupos (advantaged / disadvantaged) y características probabilísticas.
-
----
-
-## De dónde sale este proyecto
-
-Este repositorio es parte del trabajo del **Proyecto 1** de la materia **DCDS 8991 — Computational and Data Sciences Research Exploration**, Washington University in St. Louis. La app ilustra conceptos de equidad en algoritmos de decisión (admisión) mediante una simulación visual.
+Interactive web app to explore **fairness and college admission** in a simplified model with two groups (advantaged / disadvantaged) and probabilistic features.
 
 ---
 
-## Qué hace la app
+## About this project
 
-- **Dos grupos:** Grupo A (advantaged) y Grupo D (disadvantaged), con distintas probabilidades base de tener ciertas características (x₁, x₂).
-- **Regla de decisión:** Se usa una regla simple (por ejemplo f = x₁ ∧ x₂) para simular “admisión”.
-- **Visualización:** Secciones con transiciones tipo scroll (estilo Apple), círculo con iconos por grupo, grid de personas, controles de velocidad y botón de replay.
-- **Probabilidades:** Se muestran P(x₁=1), P(x₂=1) y P(f=1) por grupo para ver cómo la disparidad en recursos se traduce en disparidad en resultados.
-
-La idea es ver de forma intuitiva cómo **desigualdad en las probabilidades de las características** puede llevar a **desigualdad en la tasa de admisión** entre grupos, incluso con la misma regla “ciega” a la raza/grupo.
+This repository is part of **Project 1** for **DCDS 8991 — Computational and Data Sciences Research Exploration**, Washington University in St. Louis. The app illustrates fairness concepts in decision algorithms (admission) through a visual simulation.
 
 ---
 
-## Cómo ejecutarla en tu máquina
+## What the app does
 
-### Requisitos
+- **Two groups:** Group A (advantaged) and Group D (disadvantaged), with different base probabilities for having certain features (x₁, x₂).
+- **Decision rule:** A simple rule (e.g. f = x₁ ∧ x₂) is used to simulate “admission”.
+- **Visualization:** Scroll-style sections with Apple-like transitions, circle with group icons, person grid, speed controls, and replay button.
+- **Probabilities:** P(x₁=1), P(x₂=1), and P(f=1) are shown per group so you can see how disparity in resources translates into disparity in outcomes.
+
+The goal is to show intuitively how **inequality in feature probabilities** can lead to **inequality in admission rates** across groups, even with the same “group-blind” rule.
+
+---
+
+## How to run it locally
+
+### Requirements
 
 - Python 3.9+
-- Dependencias en `requirements.txt`
+- Dependencies in `requirements.txt`
 
-### Pasos
+### Steps
 
-1. **Clonar el repo** (o descargar y descomprimir):
+1. **Clone the repo** (or download and unzip):
 
    ```bash
-   git clone <url-del-repo>
+   git clone <repo-url>
    cd college-admission-app
    ```
 
-2. **Crear entorno virtual (recomendado):**
+2. **Create a virtual environment (recommended):**
 
    ```bash
    python -m venv venv
-   source venv/bin/activate   # En Windows: venv\Scripts\activate
+   source venv/bin/activate   # On Windows: venv\Scripts\activate
    ```
 
-3. **Instalar dependencias:**
+3. **Install dependencies:**
 
    ```bash
    pip install -r requirements.txt
    ```
 
-4. **Lanzar la app:**
+4. **Run the app:**
 
    ```bash
    streamlit run app.py
    ```
 
-   Se abrirá en el navegador (por defecto `http://localhost:8501`).
+   It will open in your browser (default `http://localhost:8501`).
 
 ---
 
-## Requisitos (requirements.txt)
+## Requirements (requirements.txt)
 
 - `numpy`
 - `pandas`
@@ -69,16 +69,16 @@ La idea es ver de forma intuitiva cómo **desigualdad en las probabilidades de l
 
 ---
 
-## Desplegar en la nube (Streamlit Community Cloud)
+## Deploy to the cloud (Streamlit Community Cloud)
 
-1. Haz fork o sube este repo a tu cuenta de GitHub.
-2. Entra en [share.streamlit.io](https://share.streamlit.io), inicia sesión con GitHub.
-3. “New app” → elige este repositorio.
+1. Fork or push this repo to your GitHub account.
+2. Go to [share.streamlit.io](https://share.streamlit.io) and sign in with GitHub.
+3. “New app” → select this repository.
 4. **Main file path:** `app.py`
-5. Deploy. Obtendrás una URL pública para compartir con quien quieras.
+5. Deploy. You’ll get a public URL to share.
 
 ---
 
-## Licencia y uso
+## License and use
 
-Proyecto educativo para DCDS 8991. Si reutilizas o adaptas el código, cita el curso y el proyecto.
+Educational project for DCDS 8991. If you reuse or adapt the code, please credit the course and project.
